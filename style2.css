@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dosis;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./assets/fundo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 30%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .inputbox {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.inputbox input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inputbox input[type="date"]::-webkit-calendar-picker-indicator{
+    margin-right: 7px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inputbox input[type="date"] {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inputbox i {
+    position: absolute;
+    right: 10px;
+    top: 15%;
+    transform: translateY(-50);
+}
+
+.container .bttn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+.login a {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p a{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+}
